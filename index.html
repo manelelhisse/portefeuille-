@@ -1,40 +1,41 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <title>My Portfolio</title>
 </head>
 <body>
 
-  <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <header class="header">
+    <h1 class="header__title">My Portfolio</h1>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#home">Home</a></li>
+        <li class="nav__item"><a href="#about">About</a></li>
+        <li class="nav__item"><a href="#work">Work</a></li>
+        <li class="nav__item"><a href="#resume">Resume</a></li>
+        <li class="nav__item"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="home">
+  <section id="home" class="section section--home">
     <h2>Welcome</h2>
     <p>Hello, I am Manel Elhisse. Welcome to my portfolio page!</p>
     <p>Here you can learn more about me, see my projects, and contact me.</p>
 
-    <audio controls>
+    <audio controls class="media">
       <source src="audio.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
   </section>
 
-  <section id="about">
+  <section id="about" class="section section--about">
     <h2>About Me</h2>
     <p>I am a beginner web developer learning how to build websites using HTML and CSS.</p>
-    <p>Here are some of the things I’ve learned so far:</p>
     <ul>
       <li>HTML basics</li>
       <li>Using lists, tables, and links</li>
@@ -42,19 +43,19 @@
     </ul>
   </section>
 
-  <section id="work">
+  <section id="work" class="section section--work">
     <h2>My Work</h2>
     <p>Here’s a small video showing one of my sample projects:</p>
-    <video width="400" controls>
+    <video controls class="media">
       <source src="project.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </section>
 
-  <section id="resume">
+  <section id="resume" class="section section--resume">
     <h2>My Resume</h2>
     <p>Here is a summary of my background:</p>
-    <table border="1">
+    <table class="resume-table">
       <tr>
         <th>Year</th>
         <th>Position</th>
@@ -73,23 +74,23 @@
     </table>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="section section--contact">
     <h2>Contact Me</h2>
-    <form action="#" method="post">
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name"><br><br>
+    <form class="form" action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
 
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
 
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5"></textarea>
 
-      <input type="submit" value="Send">
+      <input type="submit" value="Send" class="form__btn">
     </form>
   </section>
 
-  <footer>
+  <footer class="footer">
     <p>© 2025 Manel Elhisse - All rights reserved.</p>
   </footer>
 
